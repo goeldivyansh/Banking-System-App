@@ -1,0 +1,50 @@
+<%- include('partials/header.ejs') %>
+<h1>Customer Details</h1>
+<div class="container abc">
+  <table class="table">
+    <tbody>
+      <tr>
+        <td>Name</td>
+        <td><%=user.name %></td>
+      </tr>
+      <tr>
+        <td>Gender</td>
+        <td><%=user.gender %></td>
+      </tr>
+      <tr>
+        <td>Father's Name</td>
+        <td><%=user.father_name %></td>
+      </tr>
+      <tr>
+        <td>Date of Birth</td>
+        <td><%=user.dob %></td>
+      </tr>
+      <tr>
+        <td>Martial Status</td>
+        <td><%=user.martial_status %></td>
+      </tr>
+      <tr>
+        <td>Address</td>
+        <td><%=user.address %></td>
+      </tr>
+      <tr>
+        <td>Customer Type</td>
+        <td><%=user.customer_type %></td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td><%=user.email %></td>
+      </tr>
+      <tr>
+        <td>Balance</td>
+        <td><%=user.current_balance %> ₹</td>
+      </tr>
+    </tbody>
+  </table>
+  <a href="/transfer/<%= user._id %> "><button class="btn btn-lg btn-primary button">Transfer Money</button></a>
+  <a href="/transactions/<%= user._id %> "><button class="btn btn-lg btn-primary button">View All Transactions</button></a>
+  <div class="Home">
+    <a class="back" href="/">Home Page</a>
+  </div>
+</div>
+<%- include('partials/footer.ejs') %>

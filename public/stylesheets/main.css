@@ -1,0 +1,62 @@
+body {
+  width: 100%;
+  background: rgb(175, 193, 218);
+  background: linear-gradient(90deg, rgba(175, 193, 218, 1) 10%, rgba(219, 244, 246, 1) 35%, rgba(219, 244, 246, 1) 65%, rgba(175, 193, 218, 1) 90%);
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+a {
+  color: aliceblue;
+}
+
+input {
+  max-width: 100%;
+}
+
+table,
+th,
+td {
+  border: 2px solid black;
+}
+
+.button {
+  margin: 10px auto;
+  display: block;
+  width: 60%;
+}
+
+.container {
+  max-width: 400px;
+}
+
+.back {
+  color: #0056b3;
+}
+
+.t {
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+.outline {
+  border-radius: 25px;
+  border: 2px solid black;
+  padding: 20px;
+}
+
+.abc {
+  margin-top: 10px;
+}
+
+.Home {
+  text-align: center;
+}
+
+.col-6 {
+  margin: 10px auto;
+}

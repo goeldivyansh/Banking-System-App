@@ -1,0 +1,26 @@
+<%- include('partials/header.ejs') %>
+<h1>Transaction Details for <%= name %></h1>
+<div class="container abc">
+  <table class="table">
+    <tbody>
+      <tr>
+        <td><strong>Payer<strong></td>
+        <td><strong>Receiver</strong></td>
+        <td><strong>Date</strong></td>
+        <td><strong>Amount</strong></td>
+      </tr>
+      <% transactions.forEach(function(transaction) { %>
+      <tr>
+        <td><%= transaction.payer %></td>
+        <td><%= transaction.receiver %></td>
+        <td><%= transaction.date %></td>
+        <td><%= transaction.amount %></td>
+      </tr>
+      <%}); %>
+    </tbody>
+  </table>
+</div>
+<div class="Home">
+  <a class="back" href="/">Home Page</a>
+</div>
+<%- include('partials/footer.ejs') %>
